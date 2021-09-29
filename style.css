@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+:root {
+    --red: #FF7979;
+    --green: #38CC8B;
+    --purple: #5E54A4;
+    --gray: #3D3B48;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 1440px;
+    height: 800px;
+    background-image: url('/images/bg-intro-desktop.png');
+    background-color: var(--red);
+}
