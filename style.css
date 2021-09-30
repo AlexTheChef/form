@@ -177,6 +177,15 @@ input:focus{
     display: none;
 }
 
+.error-input::-webkit-input-placeholder 
+{
+    color: transparent;
+}
+
+.error-input-text{
+    color: var(--red);
+}
+
 @media screen and (max-width: 1200px) {
     html{
         height: fit-content;
