@@ -116,6 +116,7 @@ body {
 }
 .error{
     margin-bottom: 20px;
+    position: relative;
 }
 
 .input {
@@ -130,7 +131,6 @@ body {
     font-size: 14px;
     line-height: 26px;
     letter-spacing: 0.25px;
-    
 }
 
 input:focus{
@@ -165,6 +165,119 @@ input:focus{
     margin: 0;
     line-height: 16.5px;
     font-size: 11px;
-    font-weight: 400;
+    font-weight: 500;
     font-style: italic;
+    padding-top: 5px;
+}
+
+.warning{
+    position: absolute;
+    top:16px;
+    right: 27px;
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    html{
+        height: fit-content;
+    }
+
+    body{
+        height: fit-content;
+    }
+
+    .container {
+        width: 375px;
+        height: 1000px;
+        background-image: url('/images/bg-intro-mobile.png');
+        flex-direction: column;
+    }
+
+    .text {
+        width: 327px;
+        height: 226px;
+        margin:55px 0px 64px 0px;
+    }
+
+    .h1 {
+        width: 327px;
+        height: 80px;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+
+    .p {
+        width: 327px;
+        height: 130px;
+        font-size: 16px;
+        line-height: 26px;
+        margin: 11px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .form-section {
+        height: fit-content;
+        width: 327px;
+        margin-left: 0px;
+    }
+
+    .h4 {
+        width: 327px;
+        height: 88px;
+        text-align: center;
+    }
+
+    .mobile-h4{
+        width: 194px;
+        height: 52px;
+        text-align: center;
+    }
+
+    .form-css {
+        width: 279px;
+        height: fit-content;
+        padding: 24px;
+    }
+
+    .p2 {
+        height: 42px;
+        width: 249px;
+        line-height: 21px;
+        margin:0px;
+        text-align: center;
+    }
+
+    .input {
+        width: 279px;
+        padding: 0px 19px 0px 19px;
+    }
+
+    .error-message{
+        width: 279px;
+        height: fit-content;
+        color: var(--red);
+        text-align:right;
+        margin: 0;
+        line-height: 16.5px;
+        font-size: 11px;
+        font-weight: 500;
+        font-style: italic;
+        padding-top: 5px;
+    }
+
+    .button {
+        width: 279px;
+        margin-bottom: 8px;
+    }
+
+    .warning{
+        right: 20px
+    }
+
+    .error{
+        margin-bottom: 11px;
+    }
+
 }
